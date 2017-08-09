@@ -5,4 +5,10 @@ half=original/2
 while half*half != original:
     closer_to_sqr = (half+original/half)/2
     half = closer_to_sqr
-print(half, "is the square route")
+    if half*half==original:
+        print(half, "is the square route")
+        break
+    elif (original-half*half)**2<0.00001:
+        print("The square root is about",half)
+        break
+    
