@@ -1,5 +1,3 @@
-# Finding-Square-Roots
-# This code (Python) will find the square root of any number
 original=float(input("Input any number and I shall find the square root: "))
 half=original/2
 while half*half != original:
@@ -8,7 +6,6 @@ while half*half != original:
     if half*half==original:
         print(half, "is the square route")
         break
-    elif (original-half*half)**2<0.00001:
+    elif (original-half*half)**2<0.0000000000000000000000001:
         print("The square root is about",half)
         break
-    
